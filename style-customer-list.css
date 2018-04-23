@@ -61,7 +61,7 @@
   color: #337AB5;
 }
 .title,
-.comment {
+.comment, .severity  {
   flex-grow: 1;
   -webkit-flex-grow: 1;
   overflow: hidden;
@@ -128,6 +128,9 @@
     flex-direction: column;
     -webkit-flex-direction: column;
   }
+  .severity {
+  	text-overflow: ellipsis;
+  }
   .status-owner-severity div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -135,10 +138,12 @@
   .icons {
     flex-direction: column;
     -webkit-flex-direction: column;
+    align-self: flex-end;
   }
   .icons div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
+
   }
   .dates {
     flex-direction: column;
