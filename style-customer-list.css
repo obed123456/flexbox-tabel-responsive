@@ -35,13 +35,13 @@
 	width: 65%;
 }
 .icons {
-	width: 15%;
+	width: 10%;
 }
 .dates {
 	width: 15%;
 }
 .index {
-    width: 5%;
+    width: 10%;
 }
 
 .module-reporter, .status-owner-severity, .title-comment-module-reporter{
@@ -54,11 +54,15 @@
 
 
 .index {
-  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+
 }
 .title {
   font-weight: bold;
   color: #337AB5;
+
 }
 .title,
 .comment, .severity  {
