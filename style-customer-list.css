@@ -6,6 +6,10 @@
  * Basic styles, good for a large display. Everything fits in
  * one row, no wrapping. All text based cells grow equally.
  */
+ *{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
  .table-row {
   display: flex;
   display: -webkit-flex;
@@ -32,40 +36,47 @@
 }
 
 .attributes {
-	width: 65%;
+	width: 70%;
 }
-.icons {
-	width: 10%;
+.statusBadge {
+	width: 5%;
 }
-.dates {
-	width: 15%;
+.date-view {
+  width: 10%;
 }
 .index {
     width: 10%;
 }
 
-.module-reporter, .status-owner-severity, .title-comment-module-reporter{
+.view, .edit{
+  text-align: right;
+}
+.time-recurring, .service-employee, .customer-date-time-recurring{
 	width: 33%;
 }
 
-.title, .module, .reporter, .status, .severity, .comment,  .date  {
+.customer, .time, .recurring, .service, .employee, .date,  .view, .edit  {
   width: 50%;
 }
-
-
+.view > i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+ .edit > i:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
 .index {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
-
 }
-.title {
+.customer {
   font-weight: bold;
   color: #337AB5;
-
 }
-.title,
-.comment, .severity  {
+.customer,
+.date, .employee  {
   flex-grow: 1;
   -webkit-flex-grow: 1;
   overflow: hidden;
@@ -73,14 +84,14 @@
   text-overflow: ellipsis;
   padding-right: 4px;
 }
-.date {
+.view, .edit {
   /*width: 5%;*/
   text-align: right;
   padding-right: 4px;
 }
 /* growable wrappers */
-.title-comment,
-.title-comment-module-reporter,
+.customer-date,
+.customer-date-time-recurring,
 .attributes {
   flex-grow: 1;
   -webkit-flex-grow: 1;
@@ -90,78 +101,84 @@
  */
 
 /*@media all and (max-width: 1236px) {
-  .title-comment {
+  .customer-date {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  .title-comment div {
+  .customer-date div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
   }
-  .title-comment > div {
+  .customer-date > div {
   }
-  .module-reporter,
-  .status-owner {
+  .time-recurring,
+  .service-owner {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  .module-reporter div,
-  .status-owner div {
+  .time-recurring div,
+  .service-owner div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
   }
 }*/
 @media all and (max-width: 956px) {
-  .module-reporter {
+  .time-recurring {
     flex-direction: row;
     -webkit-flex-direction: row;
   }
-  .title-comment-module-reporter {
+  .customer-date-time-recurring {
     flex-direction: column;
     -webkit-flex-direction: column;
     width: 220px;
   }
-  .title-comment-module-reporter div {
+  .customer-date-time-recurring div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
   }
-  .title-comment-module-reporter > div {
+  .customer-date-time-recurring > div {
     width: 100%;
   }
-  .status-owner-severity {
+  .service-employee {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  .severity {
+  .employee {
   	text-overflow: ellipsis;
   }
-  .status-owner-severity div {
+  .service-employee div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
   }
-  .icons {
+  .statusBadge {
     flex-direction: column;
     -webkit-flex-direction: column;
     align-self: flex-end;
   }
-  .icons div {
+  .statusBadge div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
 
   }
-  .dates {
+  .date-view {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  .dates div {
+  .date-view div {
     flex-grow: 0;
     -webkit-flex-grow: 0;
+  }
+  .view, .edit{
+    text-align: right;
   }
 }
 @media all and (max-width: 956px) {
   .table-row {
 /*    padding-left: 4px;
     padding-right: 4px;*/
+  }
+  .view, .edit{
+    text-align: right;
   }
   .attributes {
     flex-direction: column;
@@ -175,8 +192,8 @@
   .attributes > div {
     width: 100%;
   }
-  .module-reporter,
-  .status-owner {
+  .time-recurring,
+  .service-owner {
     flex-direction: row;
     -webkit-flex-direction: row;
   }
@@ -222,18 +239,18 @@
   cursor: pointer;
   text-decoration: underline;
 }
-.reporter {
+.recurring {
   color: #999999;
 }
-.comment {
+.date {
   font-style: italic;
 }
-.severity.high {
+.employee.high {
   color: red;
 }
-.severity.medium {
+.employee.medium {
   color: blue;
 }
-.severity.low {
+.employee.low {
   color: green;
 }

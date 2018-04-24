@@ -7,92 +7,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="style-customer-list.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
 
     <div class="container-fluid" style="margin-top: 10px">
       <!-- Heading starts here -->
         <div class="table-row header">
+          <!-- This section 1 -->
           <div class="column index">#</div>
+          
+          <!-- This is section 2 -->
           <div class="wrapper attributes">
-            <div class="wrapper title-comment-module-reporter">
-              <div class="wrapper title-comment">
-                <div class="column title"> Customer</div>
-                <div class="column comment">Date</div>
+            <div class="wrapper customer-date-time-recurring">
+              <div class="wrapper customer-date">
+                <div class="column customer">Customer</div>
+                <div class="column date">Date</div>
               </div>
-              <div class="wrapper module-reporter">
-                <div class="column module">Time</div>
-                <div class="column reporter">Recurring</div>
+              <div class="wrapper time-recurring">
+                <div class="column time">Time</div>
+                <div class="column recurring">Recurring</div>
               </div>
             </div>
-            <div class="wrapper status-owner-severity">
-                <div class="column status">Service</div>
-              <div class="column severity">Employee</div>
+            <div class="wrapper service-employee">
+              <div class="column service">Service</div>
+              <div class="column employee">Employee</div>
             </div>
           </div>
-          <div class="wrapper icons">
-            <div title="Watch" class="column watch">
-              <span class="glyphicon glyphicon-eye-open">Status</span>
-            </div>
+
+          <!-- This is section 3 -->
+          <div class="wrapper statusBadge">
+            <div class="column status">Status</div>
           </div>
-          <div class="wrapper dates">
-            <div class="column date">View</div>
-            <div class="column date">Edit</div>
+
+          <!-- This is section 4 -->
+          <div class="wrapper date-view">
+            <div class="column view">View</div>
+            <div class="column edit">Edit</div>
           </div>
-        </div>      
+        </div> 
+
         <!-- Here goes the list  -->
         <div class="table-row">
-          <div class="column index">1001</div>
+          <div class="column index"><div>1001</div></div>
 
           <div class="wrapper attributes">
-            <div class="wrapper title-comment-module-reporter">
-              <div class="wrapper title-comment">
-                <div class="column title">John  Smith</div>
-                <div class="column comment">2018-01-01</div>
+            <div class="wrapper customer-date-time-recurring">
+              <div class="wrapper customer-date">
+                <div class="column customer">John  Smith</div>
+                <div class="column date">2018-01-01</div>
               </div>
-              <div class="wrapper module-reporter">
-                <div class="column module">08:00 - 10:00</div>
-                <div class="column reporter">Ja</div>
+              <div class="wrapper time-recurring">
+                <div class="column time">08:00 - 10:00</div>
+                <div class="column recurring">Ja</div>
               </div>
             </div>
-            <div class="wrapper status-owner-severity">
-                <div class="column status">Hemstädning</div>
-              <div class="column severity">Eddie</div>
+            <div class="wrapper service-employee">
+                <div class="column service">Hemstädning</div>
+              <div class="column employee">Eddie</div>
             </div>
           </div>
-          <div class="wrapper icons">
-            <div class="column watch"><span class="badge badge-success">Done</span></div>
+          <div class="wrapper statusBadge">
+            <div class="column status"><span class="badge badge-success">Done</span></div>
           </div>
-          <div class="wrapper dates">
-            <div class="column date">View</div>
-            <div class="column date">Edit</div>
+          <div class="wrapper date-view">
+            <div class="column view"><i class="fas fa-eye"></i></div>
+            <div class="column edit"><i class="fas fa-edit"></i></div>
           </div>
         </div>
         <div class="table-row">
-            <div class="column index">1002</div>
+            <div class="column index"><div>1001</div></div>
             <div class="wrapper attributes">
-              <div class="wrapper title-comment-module-reporter">
-                <div class="wrapper title-comment">
-                  <div class="column title">John  Smith Andersson</div>
-                  <div class="column comment">2018-01-01</div>
+              <div class="wrapper customer-date-time-recurring">
+                <div class="wrapper customer-date">
+                  <div class="column customer">John  Smith Andersson</div>
+                  <div class="column date">2018-01-01</div>
                 </div>
-                <div class="wrapper module-reporter">
-                  <div class="column module">08:00</div>
-                  <div class="column reporter">Ja</div>
+                <div class="wrapper time-recurring">
+                  <div class="column time">08:00</div>
+                  <div class="column recurring">Ja</div>
                 </div>
               </div>
-              <div class="wrapper status-owner-severity">
-                  <div class="column status">Hemstädning</div>
-                <div class="column severity">Eddie Holmberg</div>
+              <div class="wrapper service-employee">
+                  <div class="column service">Hemstädning</div>
+                <div class="column employee">Eddie Holmberg</div>
               </div>
             </div>
-            <div class="wrapper icons">
-              <div class="column watch"><span class="badge badge-success">Done</span></div>
+            <div class="wrapper statusBadge">
+              <div class="column status"><span class="badge badge-success">Done</span></div>
             </div>
-            <div class="wrapper dates">
-              <div class="column date">View</div>
-              <div class="column date">Edit</div>
+            <div class="wrapper date-view">
+              <div class="column view"><i class="fas fa-eye"></i></div>
+              <div class="column edit"><i class="fas fa-edit"></i></div>
             </div>
           </div>
         
